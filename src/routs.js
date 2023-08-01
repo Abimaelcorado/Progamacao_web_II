@@ -5,6 +5,7 @@ import Contatos from "./Page/Contatos"
 import NaoEncontrada from "./Page/NotFound"
 import Votar from "./Page/Votar"
 import Contador from "./Page/Contador"
+import ApiTemperatura from "./Page/Api"
 
 function RotasApp() {
     return (
@@ -15,6 +16,7 @@ function RotasApp() {
                     <Route path="contatos" element={<Contatos />}/>
                     <Route path="votar" element={<Votar />}/>
                     <Route path="contar" element={<Contador />}/>
+                    <Route path="api" element={<ApiTemperatura />}/>
                     <Route path="*" element={<NaoEncontrada />}/>
                 </Route>
             </Routes>
